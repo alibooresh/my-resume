@@ -1,0 +1,62 @@
+/* Palette */
+/* 
+0b132b
+1c2541
+3a506b
+5bc0be
+6fffe9
+*/
+
+.box {
+  min-width: 80vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c2541;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.content {
+  background-color: #0b132b;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.menu {
+  min-height: 100vh;
+  min-width: 20vh;
+  background-color: #1c2541;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  overflow-y: auto;
+}
+.info {
+    margin: 20px;
+  min-height: 25vh;
+  background-color: #1c2541;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.social-links {
+  min-height: 10vh;
+  background-color: #1c2541;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.menu-links {
+  min-height: 65vh;
+  background-color: #1c2541;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
