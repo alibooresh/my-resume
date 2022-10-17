@@ -14,6 +14,7 @@ import { Avatar, Grid, ListItem, ListItemButton, ListItemIcon,ListItemText} from
 import List from "@mui/material/List";
 import IconButton from "@mui/material/IconButton";
 import './avatar.png';
+import MenuComponent from "../Menu/Menu";
 const HomeView = () => {
   return (
     <Fragment>
@@ -60,54 +61,40 @@ const HomeView = () => {
               </List>
             </Grid>
             <Grid className="menu-links" item xs={8}>
-              <List>
-                <ListItem>
-                  <ListItemButton className="menu-button">
-                    <ListItemIcon>
-                      <HomeOutlinedIcon className="text menu-icon" />
-                    </ListItemIcon>
-                    <ListItemText className="text" primary="Home" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton className="menu-button">
-                    <ListItemIcon>
+              <MenuComponent
+                menuItems={[
+                  {
+                    icon: <HomeOutlinedIcon className="text menu-icon" />,
+                    title: "Home",
+                  },
+                  {
+                    icon: (
                       <PersonOutlineOutlinedIcon className="text menu-icon" />
-                    </ListItemIcon>
-                    <ListItemText className="text" primary="About" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton className="menu-button">
-                    <ListItemIcon>
+                    ),
+                    title: "About",
+                  },
+                  {
+                    icon: (
                       <AssignmentIndOutlinedIcon className="text menu-icon" />
-                    </ListItemIcon>
-                    <ListItemText className="text" primary="Resume" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton className="menu-button">
-                    <ListItemIcon>
+                    ),
+                    title: "Resume",
+                  },
+                  {
+                    icon: (
                       <WorkHistoryOutlinedIcon className="text menu-icon" />
-                    </ListItemIcon>
-                    <ListItemText className="text" primary="Portfilio" />
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton className="menu-button">
-                    <ListItemIcon>
-                      <EmailOutlinedIcon className="text menu-icon" />
-                    </ListItemIcon>
-                    <ListItemText className="text" primary="Contact" />
-                  </ListItemButton>
-                </ListItem>
-              </List>
+                    ),
+                    title: "Portfilio",
+                  },
+                  {
+                    icon: <EmailOutlinedIcon className="text menu-icon" />,
+                    title: "Contact",
+                  },
+                ]}
+              />
             </Grid>
           </Grid>
         </Grid>
-        <Grid className="box content" item xs={9}>
-          
-        </Grid>
+        <Grid className="box content" item xs={9}></Grid>
       </Grid>
     </Fragment>
   );
