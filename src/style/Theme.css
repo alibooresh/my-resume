@@ -14,12 +14,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0b132b;
+  background-color: #3a506b;
   font-size: calc(10px + 2vmin);
+  background: url(../../public/ali-bg.jpg) top center;
+    background-size: cover;
 }
 
 .content {
-  background-color: #0b132b;
+  background-color: #3a506b;
   font-size: calc(10px + 2vmin);
    width: 100%;
     height: 100vh !important;
@@ -73,4 +75,13 @@ color: #6fffe9;
 
 .menu-button:hover{
     color: #5bc0be;
+}
+
+.animated-text{
+  color: #3a506b !important;
+  position: absolute;
+  top: 15px;
+  left:65vh;
+  background: transparent !important;
+  box-shadow: none !important;
 }
