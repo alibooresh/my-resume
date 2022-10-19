@@ -1,4 +1,4 @@
-import { Grid, IconButton, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import { Fragment } from "react";
 export interface MenuProps {
   menuItems:MenuItem[];

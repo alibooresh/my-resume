@@ -7,6 +7,11 @@
 6fffe9
 */
 
+@font-face {
+    font-family: GloomyThings;
+    src:url('../../public/fonts/gloomy-things/GloomyThings.ttf');
+}
+
 .box {
   min-width: 80vh;
   min-height: 100vh;
@@ -78,6 +83,7 @@ color: #6fffe9;
 }
 
 .animated-text{
+  font-family: GloomyThings !important;
   color: #3a506b !important;
   position: absolute;
   top: 15px;
