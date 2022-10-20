@@ -12,7 +12,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import "../../style/Theme.css";
-import "./avatar.png";
+import avatar from "./avatar.png";
 
 export interface InfoProps {
   firstName: string;
@@ -41,12 +41,8 @@ const Info: React.FC<InfoProps> = (props: InfoProps) => {
               width: "80px",
               height: "80px",
             }}
-            src="./avatar.png"
+            src={avatar}
           >
-            {props.avatarFileName
-              ? ""
-              : props.firstName.substring(0, 1) +
-                props.lastName.substring(0, 1)}
           </Avatar>
         </ListItem>
         <ListItem className="center">

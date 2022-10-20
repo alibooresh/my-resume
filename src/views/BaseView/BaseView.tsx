@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import MenuComponent from "../../components/Menu/Menu";
 import Info from "../../components/Info/Info";
-import { TypeAnimation } from 'react-type-animation';
 
 const BaseView = () => {
   return (
@@ -73,23 +72,8 @@ const BaseView = () => {
         </Grid>
         <Grid className="box content" item xs={9}>
           <Paper className="animated-text">
-            <p>Hy, My name is Ali Booresh</p>
-            <p>
-              I'm a{" "}
-              <TypeAnimation
-                sequence={[
-                  "Fullstack Developer",
-                  2000,
-                  "Freelancer", // Deletes 'One' and types 'Two'
-                  2000,
-                  () => {},
-                ]}
-                wrapper="div"
-                cursor={true}
-                repeat={Infinity}
-                style={{ fontSize: "2em" }}
-              />
-            </p>
+            <p>{"Hey, My name is Ali Booresh"}</p>
+            <p>{"I'm a Fullstack Developer"}</p>
           </Paper>
         </Grid>
       </Grid>
