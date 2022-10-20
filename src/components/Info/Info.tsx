@@ -1,5 +1,12 @@
 import { Fragment } from "react";
-import { Avatar, ListItem, ListItemText} from "@mui/material";
+import {
+  Avatar,
+  Grid,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
 import List from "@mui/material/List";
 import IconButton from "@mui/material/IconButton";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -86,13 +93,14 @@ const Info: React.FC<InfoProps> = (props: InfoProps) => {
                     <FacebookIcon className="text social-icon" />
                   </IconButton>
                 ) : (
-                  ''
+                  ""
                 )}
                 {props.socialMediaLinks?.linkedIn ? (
                   <IconButton
                     onClick={() => {
                       window.open(props.socialMediaLinks?.linkedIn);
-                    }} >
+                    }}
+                  >
                     <LinkedInIcon className="text socialicon" />
                   </IconButton>
                 ) : (
