@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: GloomyThings;
-    src:url('../../public/fonts/gloomy-things/GloomyThings.ttf');
+    src:url('../fonts/gloomy-things/GloomyThings.ttf');
 }
 
 .box {
@@ -21,7 +21,7 @@
   justify-content: center;
   background-color: #3a506b;
   font-size: calc(10px + 2vmin);
-  background: url(../../public/ali-bg.jpg) top center;
+  background: url(../img/ali-bg.jpg) top center;
     background-size: cover;
 }
 

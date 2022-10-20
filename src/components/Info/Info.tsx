@@ -86,14 +86,13 @@ const Info: React.FC<InfoProps> = (props: InfoProps) => {
                     <FacebookIcon className="text social-icon" />
                   </IconButton>
                 ) : (
-                  ""
+                  ''
                 )}
                 {props.socialMediaLinks?.linkedIn ? (
                   <IconButton
                     onClick={() => {
-                      window.open(props.socialMediaLinks?.linkedIn, "_blank");
-                    }}
-                  >
+                      window.open(props.socialMediaLinks?.linkedIn);
+                    }} >
                     <LinkedInIcon className="text socialicon" />
                   </IconButton>
                 ) : (
