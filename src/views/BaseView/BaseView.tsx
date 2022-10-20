@@ -32,7 +32,8 @@ const BaseView = () => {
                   gitHub: "https://www.github.com/alibooresh",
                   instagram: "https://www.instagram.com/alibooresh",
                   twitter: "https://twitter.com/alibooresh",
-                  linkedIn: "https://www.linkedin.com/in/ali-booresh-56963b16a/",
+                  linkedIn:
+                    "https://www.linkedin.com/in/ali-booresh-56963b16a/",
                 }}
               />
             </Grid>
@@ -77,14 +78,11 @@ const BaseView = () => {
               I'm a{" "}
               <TypeAnimation
                 sequence={[
-                  "Fullstack Developer", // Types 'One'
-                  2000, // Waits 1s
-                  "Photographer", // Deletes 'One' and types 'Two'
-                  2000, // Waits 2s
-                  "khepel", // Types 'Three' without deleting 'Two'
-                  () => {
-                    console.log("Done typing!"); // Place optional callbacks anywhere in the array
-                  },
+                  "Fullstack Developer",
+                  2000,
+                  "Freelancer", // Deletes 'One' and types 'Two'
+                  2000,
+                  () => {},
                 ]}
                 wrapper="div"
                 cursor={true}
