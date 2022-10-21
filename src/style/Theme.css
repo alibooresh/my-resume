@@ -83,7 +83,9 @@ color: #6fffe9;
 }
 
 .animated-text{
-  color: #3a506b !important;
+  color: #0b132b !important;
+  font-weight: 500;
+  font-family: GloomyThings;
   position: absolute;
   top: 15px;
   left:65vh;
